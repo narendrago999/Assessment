@@ -1,0 +1,67 @@
+[
+  {
+    "name": "bronze_patient",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/bronze_patient",
+        "itemId": "fbb7963a-40b1-a572-4a6f-0b4334da9e7d",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  },
+  {
+    "name": "bronze_observation",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/bronze_observation",
+        "itemId": "fbb7963a-40b1-a572-4a6f-0b4334da9e7d",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  },
+  {
+    "name": "bronze_ingestion_audit",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/bronze_ingestion_audit",
+        "itemId": "fbb7963a-40b1-a572-4a6f-0b4334da9e7d",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  },
+  {
+    "name": "bronze_encounter",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/bronze_encounter",
+        "itemId": "fbb7963a-40b1-a572-4a6f-0b4334da9e7d",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  },
+  {
+    "name": "bronze_condition",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/bronze_condition",
+        "itemId": "fbb7963a-40b1-a572-4a6f-0b4334da9e7d",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  }
+]

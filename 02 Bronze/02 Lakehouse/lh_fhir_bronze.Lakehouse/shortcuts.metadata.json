@@ -1,0 +1,15 @@
+[
+  {
+    "name": "raw_fhir",
+    "path": "/Files",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Files/raw/fhir",
+        "itemId": "dfe88c6d-afa9-81e3-4278-6183e2be6953",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  }
+]

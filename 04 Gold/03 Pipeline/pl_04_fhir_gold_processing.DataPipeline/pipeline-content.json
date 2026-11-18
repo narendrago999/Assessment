@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "SqlServerStoredProcedure",
+        "typeProperties": {
+          "storedProcedureName": "[audit].[usp_run_gold]",
+          "storedProcedureParameters": {
+            "pipeline_name": {
+              "value": "pl_04_fhir_gold_processing"
+            },
+            "pipeline_run_id": {
+              "value": "@pipeline().RunId"
+            }
+          }
+        },
+        "linkedService": {
+          "name": "wh_fhir_gold",
+          "properties": {
+            "type": "DataWarehouse",
+            "typeProperties": {
+              "artifactId": "e5599ebd-9d8b-b5d9-4d65-85f9cb4dcda8",
+              "endpoint": "udaaakhjoc7etbzt7lvknlhnte-tkv5vdsreghedh7pmpqjefeg7q.datawarehouse.fabric.microsoft.com",
+              "workspaceId": "00000000-0000-0000-0000-000000000000"
+            },
+            "annotations": []
+          }
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "ACT_01_RUN_GOLD",
+        "dependsOn": []
+      }
+    ]
+  }
+}
